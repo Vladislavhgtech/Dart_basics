@@ -17,4 +17,8 @@ void main() {
   List<String> list1 = ["one", "two", "three", "cat", "dog"];
   WordToNumber wtn = new WordToNumber(list1);
   wtn.display();
+
+  Point A = new Point(1, 2, 3);
+  Point B = new Point.zero(0);
+  print(A.distanceTo(B));
 }
