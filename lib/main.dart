@@ -1,5 +1,9 @@
 import 'package:dart_basics/library.dart';
 
+double mabs(double x) {
+  return (x < 0) ? -x : x;
+}
+
 void main() {
   DelimetersCalculator test1 = new DelimetersCalculator(100, 200, 34);
   test1.display();
@@ -21,4 +25,7 @@ void main() {
   Point A = new Point(1, 2, 3);
   Point B = new Point.zero(0);
   print(A.distanceTo(B));
+
+  RootCalculations test7 = new RootCalculations(1024, 10);
+  test7.RC(1024, 10);
 }
