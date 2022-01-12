@@ -28,4 +28,24 @@ void main() {
 
   RootCalculations test7 = new RootCalculations();
   print(test7.RC(1024, 10));
+
+  User test = User('qwe@test.com');
+  AdminUser admin = AdminUser('admin@flutter.com');
+  GeneralUser user1 = GeneralUser('user1@flutter.com');
+  GeneralUser user2 = GeneralUser('user2@flutter.com');
+  GeneralUser user3 = GeneralUser('user3@flutter.com');
+  admin.getMailSystem;
+
+  UserManager userManager = UserManager();
+
+  userManager.add(admin);
+  userManager.add(user1);
+  userManager.add(user2);
+  userManager.add(user3);
+
+  userManager.getUsers();
+
+  userManager.remove(user2);
+
+  userManager.getUsers();
 }
