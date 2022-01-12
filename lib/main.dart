@@ -26,6 +26,6 @@ void main() {
   Point B = new Point.zero(0);
   print(A.distanceTo(B));
 
-  RootCalculations test7 = new RootCalculations(1024, 10);
-  test7.RC(1024, 10);
+  RootCalculations test7 = new RootCalculations();
+  print(test7.RC(1024, 10));
 }
